@@ -1,0 +1,45 @@
+hydra:
+  run:
+    dir: ./outputs/${general.project}/${general.experiment}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+general:
+  batch_size: 32
+  check_val_every_n_epoch: 25
+  project: testing
+  checkpoint_dir: output
+  experiment: default-experiment
+  dataset_path:
+  save_prefix: ''
+  autoencoder_path:
+  feature_type: original
+  model: autoencoder_linear.AutoencoderLinear
+  ae_model_input_dims: 35
+  clf_model:
+  feature_transformer: original_feature_transformer.OriginalFeatureTransformer
+  num_epochs: 10000
+  pretraining_epochs: 500
+  lr: 1
+  clf_adadelta_lr: 1.0
+  tuning_lr: 0.001
+  list: False
+  early_stopping_error: 1e-7
+  n_neighbors: 10
+  lambda_filter: 0.01
+  total_rows_threshold: 150000
+  data_module: data_modules.NetflowDataModule
+  sklearn: False
+  l2: 0.4
+  clf_epochs: 500
+  rf_max_features: auto
+  load_from_disk: False
+  save_data_prefix: conference
+  reserve_type: rae_lambda_tuning
+  hidden_layer_size: 15
+  use_all_training_data: False
+  s_threshold: 0.01
+  group: lewbug
+  threshold_name: no_threshold
+  clf_input_type: X
+  weight_multiplier: 1.0
+  oversampling_multiplier: 1.0
+  tuning_criteria: attack
