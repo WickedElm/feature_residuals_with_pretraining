@@ -26,4 +26,4 @@ To do this, clone the repo, change to its directory, and execute:
 where you replace with one of the dataset run scripts in the repo such as run_nf_unsw_nb15_v2
 
 ## Finding results data
-After performing an experiment the resulting data can be found in the ./output/ directory.
+After performing an experiment the resulting data can be found in the ./outputs/ directory.
