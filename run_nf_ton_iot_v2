@@ -27,7 +27,7 @@ validation_file=conference_nf-ton-iot-v2_ae_tuning_validation.pkl
 test_file=conference_nf-ton-iot-v2_ae_tuning_test.pkl
 save_prefix="nf_ton_iot_v2"
 dataset="nf_ton_iot_v2"
-dataset_path=./datasets/nf-ton-iot-v2/nf-ton-iot-v2/nf-ton-iot-v2.pkl
+dataset_path=`pwd`/datasets/nf-ton-iot-v2/nf-ton-iot-v2/nf-ton-iot-v2.pkl
 
 # Get date for results  dir
 cdate=$(date +%Y%m%d)

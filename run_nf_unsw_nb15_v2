@@ -27,14 +27,14 @@ validation_file=conference_nf-unsw-nb15-v2_ae_tuning_validation.pkl
 test_file=conference_nf-unsw-nb15-v2_ae_tuning_test.pkl
 save_prefix="nf_unsw_nb15_v2"
 dataset="nf_unsw_nb15_v2"
-dataset_path=./datasets/nf-unsw-nb15-v2/nf-unsw-nb15-v2/nf-unsw-nb15-v2.pkl
+dataset_path=`pwd`/datasets/nf-unsw-nb15-v2/nf-unsw-nb15-v2/nf-unsw-nb15-v2.pkl
 
 # Get date for results  dir
 cdate=$(date +%Y%m%d)
 cseconds=$(date +%s%N)
 timestamp=${cdate}_${cseconds}
-epochs="600"
-pretraining_epochs="500"
+epochs="3"
+pretraining_epochs="1"
 clf_input_types="X L S XL XS LS XLS"
 lambda_filter=0.0 # Not used for this model
 tuning_lr=0.001 # Not used for this model

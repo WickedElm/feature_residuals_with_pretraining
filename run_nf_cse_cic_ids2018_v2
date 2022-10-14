@@ -27,7 +27,7 @@ validation_file=conference_nf-cse-cic-ids2018-v2_ae_tuning_validation.pkl
 test_file=conference_nf-cse-cic-ids2018-v2_ae_tuning_test.pkl
 save_prefix="nf_cse_cic_ids2018_v2"
 dataset="nf_cse_cic_ids2018_v2"
-dataset_path=./datasets/nf-cse-cic-ids2018-v2/nf-cse-cic-ids2018-v2/nf-cse-cic-ids2018-v2.pkl
+dataset_path=`pwd`/datasets/nf-cse-cic-ids2018-v2/nf-cse-cic-ids2018-v2/nf-cse-cic-ids2018-v2.pkl
 
 # Get date for results  dir
 cdate=$(date +%Y%m%d)

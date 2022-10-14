@@ -27,7 +27,7 @@ validation_file=conference_sf_nf_bot_iot_v2_ae_tuning_validation.pkl
 test_file=conference_sf_nf_bot_iot_v2_ae_tuning_test.pkl
 save_prefix="sf_nf_bot_iot_v2"
 dataset="sf_nf_bot_iot_v2"
-dataset_path=./datasets/nf-bot-iot-v2/sf_nf_bot_iot_v2/sf_nf_bot_iot_v2.pkl
+dataset_path=`pwd`/datasets/nf-bot-iot-v2/sf_nf_bot_iot_v2/sf_nf_bot_iot_v2.pkl
 
 # Get date for results  dir
 cdate=$(date +%Y%m%d)
