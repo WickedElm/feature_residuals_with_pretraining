@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+cd `dirname $0`
+
+# Download data (only needs to be done once)
+./download_data
+
+# Execute a single experiment of each dataset
+# - Note that the paper performs 10 experiments and takes the mean of their performance
+./run_nf_unsw_nb15_v2
+./run_nf_bot_iot_v2
+./run_nf_ton_iot_v2
+./run_nf_cse_cic_ids2018_v2
+./run_sf_nf_unsw_nb15_v2
+./run_sf_nf_bot_iot_v2
+./run_sf_nf_ton_iot_v2
+./run_sf_nf_cse_cic_ids2018_v2
