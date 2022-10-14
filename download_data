@@ -15,9 +15,16 @@ echo "Downloading data."
 ###
 # Base datasets files.
 ###
-wget -q ${base_download_url}/datasets.tar.gz
+wget -q ${base_download_url}/datasets.aa
+wget -q ${base_download_url}/datasets.ab
+wget -q ${base_download_url}/datasets.ac
+wget -q ${base_download_url}/datasets.ad
+wget -q ${base_download_url}/datasets.ae
+wget -q ${base_download_url}/datasets.af
+wget -q ${base_download_url}/datasets.ag
+cat datasets.aa datasets.ab datasets.ac datasets.ad datasets.ae datasets.af datasets.ag > datasets.tar.gz
 tar xfz datasets.tar.gz
-rm -f datasets.tar.gz
+rm -f datasets.tar.gz datasets.aa datasets.ab datasets.ac datasets.ad datasets.ae datasets.af datasets.ag
 
 ###
 # NF-UNSW-NB15-V2
