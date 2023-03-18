@@ -2,6 +2,9 @@
 
 This repo contains the code needed to support the paper titled "Autoencoder Feature Residuals for Network Intrusion Detection:  Unsupervised Pre-training for Improved Performance". Note that this code contains dependencies on external services such as Weights and Biases and other python libraries.
 
+## Extended book chapter code for recurrent neural networks
+The code for the extended book chapter for recurrent neural networks can be found here:  [https://github.com/WickedElm/feature_residuals_with_pretraining_rnn](https://github.com/WickedElm/feature_residuals_with_pretraining_rnn)
+
 # Executing Code
 Assuming all of the dependencies are in place such as an account on Weights and Biases one can execute experiments by each dataset or all at once.
 
